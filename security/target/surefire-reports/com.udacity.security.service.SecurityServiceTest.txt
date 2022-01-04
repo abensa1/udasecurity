@@ -1,0 +1,514 @@
+-------------------------------------------------------------------------------
+Test set: com.udacity.security.service.SecurityServiceTest
+-------------------------------------------------------------------------------
+Tests run: 17, Failures: 0, Errors: 17, Skipped: 0, Time elapsed: 0.241 s <<< FAILURE! - in com.udacity.security.service.SecurityServiceTest
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_alarmActiveAndSensorStateChanges_stateNotAffected  Time elapsed: 0.155 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1253321264 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus)[1]  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$855364911 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus)[2]  Time elapsed: 0.003 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1195378741 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus)[3]  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$2044793663 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.updateSensors_systemArmed_deactivateAllSensors(ArmingStatus)[1]  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$271930000 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.updateSensors_systemArmed_deactivateAllSensors(ArmingStatus)[2]  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$588538371 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_alarmAlreadyPendingAndSensorActivated_alarmStatusAlarm  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1800095952 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_alarmArmedAndSensorActivated_alarmStatusPending(ArmingStatus)[1]  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1224709439 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_alarmArmedAndSensorActivated_alarmStatusPending(ArmingStatus)[2]  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$898727860 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1543207178 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_sensorStatusChangeAndSystemIsAlreadyDisarmed_stateNotAffected(Boolean,Boolean)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$500421393 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_sensorStatusChangeAndSystemIsAlreadyDisarmed_stateNotAffected(Boolean,Boolean)  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$246892299 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_systemArmedHomeAndCatDetected_changeToAlarmStatus  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1989578329 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_imageContainingCatDetectedAndSystemArmed_changeToAlarmStatus  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$823960196 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_alarmPendingAndAllSensorsInactive_changeToNoAlarm  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$2116914425 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmStatus_systemDisArmed_changeToAlarmStatus  Time elapsed: 0.002 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1239509393 must be defined in the same package as org.mockito.codegen.InjectionBase
+
+com.udacity.security.service.SecurityServiceTest.changeAlarmState_noCatImageIdentifiedAndSensorsAreInactive_changeToAlarmStatus  Time elapsed: 0.001 s  <<< ERROR!
+org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1242400867 must be defined in the same package as org.mockito.codegen.InjectionBase
+

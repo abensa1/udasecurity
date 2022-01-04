@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.udacity.security.service.SecurityServiceTest" time="0.241" tests="17" errors="17" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security/target/test-classes:/Users/aljaz.bensa/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aljaz.bensa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aljaz.bensa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aljaz.bensa/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/aljaz.bensa/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/aljaz.bensa/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/aws-json-protocol/2.15.14/aws-json-protocol-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.4/jackson-core-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/protocol-core/2.15.14/protocol-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/profiles/2.15.14/profiles-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.4/jackson-databind-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/http-client-spi/2.15.14/http-client-spi-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.4/jackson-annotations-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/annotations/2.15.14/annotations-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/utils/2.15.14/utils-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/aws-core/2.15.14/aws-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/metrics-spi/2.15.14/metrics-spi-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/apache-client/2.15.14/apache-client-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/Users/aljaz.bensa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aljaz.bensa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aljaz.bensa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/netty-nio-client/2.15.14/netty-nio-client-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec-http/4.1.46.Final/netty-codec-http-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec-http2/4.1.46.Final/netty-codec-http2-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec/4.1.46.Final/netty-codec-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport/4.1.46.Final/netty-transport-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-resolver/4.1.46.Final/netty-resolver-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-common/4.1.46.Final/netty-common-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-buffer/4.1.46.Final/netty-buffer-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-handler/4.1.46.Final/netty-handler-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport-native-epoll/4.1.46.Final/netty-transport-native-epoll-4.1.46.Final-linux-x86_64.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.46.Final/netty-transport-native-unix-common-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/com/typesafe/netty/netty-reactive-streams-http/2.0.4/netty-reactive-streams-http-2.0.4.jar:/Users/aljaz.bensa/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/aljaz.bensa/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/aljaz.bensa/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.0/mockito-junit-jupiter-3.6.0.jar:/Users/aljaz.bensa/.m2/repository/org/mockito/mockito-core/3.6.0/mockito-core-3.6.0.jar:/Users/aljaz.bensa/.m2/repository/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.jar:/Users/aljaz.bensa/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.jar:/Users/aljaz.bensa/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.font.fontmanager" value="sun.font.CFontManager"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/17.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.apache.maven.surefire.booter.ForkedBooter /Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security/target/surefire 2022-01-04T09-32-33_166-jvmRun1 surefire1976528618566008087tmp surefire_017359649883127499961tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security/target/test-classes:/Users/aljaz.bensa/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aljaz.bensa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aljaz.bensa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aljaz.bensa/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/aljaz.bensa/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/aljaz.bensa/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/aws-json-protocol/2.15.14/aws-json-protocol-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.4/jackson-core-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/protocol-core/2.15.14/protocol-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/profiles/2.15.14/profiles-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.4/jackson-databind-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/http-client-spi/2.15.14/http-client-spi-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.4/jackson-annotations-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/annotations/2.15.14/annotations-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/utils/2.15.14/utils-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/aws-core/2.15.14/aws-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/metrics-spi/2.15.14/metrics-spi-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/apache-client/2.15.14/apache-client-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/Users/aljaz.bensa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aljaz.bensa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aljaz.bensa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/netty-nio-client/2.15.14/netty-nio-client-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec-http/4.1.46.Final/netty-codec-http-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec-http2/4.1.46.Final/netty-codec-http2-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec/4.1.46.Final/netty-codec-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport/4.1.46.Final/netty-transport-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-resolver/4.1.46.Final/netty-resolver-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-common/4.1.46.Final/netty-common-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-buffer/4.1.46.Final/netty-buffer-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-handler/4.1.46.Final/netty-handler-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport-native-epoll/4.1.46.Final/netty-transport-native-epoll-4.1.46.Final-linux-x86_64.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.46.Final/netty-transport-native-unix-common-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/com/typesafe/netty/netty-reactive-streams-http/2.0.4/netty-reactive-streams-http-2.0.4.jar:/Users/aljaz.bensa/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/aljaz.bensa/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/aljaz.bensa/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.0/mockito-junit-jupiter-3.6.0.jar:/Users/aljaz.bensa/.m2/repository/org/mockito/mockito-core/3.6.0/mockito-core-3.6.0.jar:/Users/aljaz.bensa/.m2/repository/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.jar:/Users/aljaz.bensa/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.jar:/Users/aljaz.bensa/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/aljaz.bensa"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="jdk.module.path" value="/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security/target/classes:/Users/aljaz.bensa/.m2/repository/com/google/guava/guava/30.1-jre/guava-30.1-jre.jar:/Users/aljaz.bensa/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/image/target/classes:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/rekognition/2.15.14/rekognition-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/sdk-core/2.15.14/sdk-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/org/slf4j/slf4j-api/1.7.28/slf4j-api-1.7.28.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/auth/2.15.14/auth-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/regions/2.15.14/regions-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/miglayout/miglayout/3.7.4/miglayout-3.7.4.jar"/>
+    <property name="java.version.date" value="2021-10-19"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/17.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/aljaz.bensa/.m2/repository/org/apache/maven/surefire/surefire-booter/3.0.0-M4/surefire-booter-3.0.0-M4.jar:/Users/aljaz.bensa/.m2/repository/org/apache/maven/surefire/surefire-api/3.0.0-M4/surefire-api-3.0.0-M4.jar:/Users/aljaz.bensa/.m2/repository/org/apache/maven/surefire/surefire-logger-api/3.0.0-M4/surefire-logger-api-3.0.0-M4.jar:/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security/target/test-classes:/Users/aljaz.bensa/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/aljaz.bensa/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/aljaz.bensa/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/aljaz.bensa/.m2/repository/org/checkerframework/checker-qual/3.5.0/checker-qual-3.5.0.jar:/Users/aljaz.bensa/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/aljaz.bensa/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/aws-json-protocol/2.15.14/aws-json-protocol-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.4/jackson-core-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/protocol-core/2.15.14/protocol-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/profiles/2.15.14/profiles-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.4/jackson-databind-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/org/reactivestreams/reactive-streams/1.0.2/reactive-streams-1.0.2.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/eventstream/eventstream/1.0.1/eventstream-1.0.1.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/http-client-spi/2.15.14/http-client-spi-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.4/jackson-annotations-2.10.4.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/annotations/2.15.14/annotations-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/utils/2.15.14/utils-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/aws-core/2.15.14/aws-core-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/metrics-spi/2.15.14/metrics-spi-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/apache-client/2.15.14/apache-client-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/org/apache/httpcomponents/httpclient/4.5.9/httpclient-4.5.9.jar:/Users/aljaz.bensa/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/aljaz.bensa/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/aljaz.bensa/.m2/repository/org/apache/httpcomponents/httpcore/4.4.11/httpcore-4.4.11.jar:/Users/aljaz.bensa/.m2/repository/software/amazon/awssdk/netty-nio-client/2.15.14/netty-nio-client-2.15.14.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec-http/4.1.46.Final/netty-codec-http-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec-http2/4.1.46.Final/netty-codec-http2-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-codec/4.1.46.Final/netty-codec-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport/4.1.46.Final/netty-transport-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-resolver/4.1.46.Final/netty-resolver-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-common/4.1.46.Final/netty-common-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-buffer/4.1.46.Final/netty-buffer-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-handler/4.1.46.Final/netty-handler-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport-native-epoll/4.1.46.Final/netty-transport-native-epoll-4.1.46.Final-linux-x86_64.jar:/Users/aljaz.bensa/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.46.Final/netty-transport-native-unix-common-4.1.46.Final.jar:/Users/aljaz.bensa/.m2/repository/com/typesafe/netty/netty-reactive-streams-http/2.0.4/netty-reactive-streams-http-2.0.4.jar:/Users/aljaz.bensa/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter/5.8.2/junit-jupiter-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.2/junit-jupiter-api-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-commons/1.8.2/junit-platform-commons-1.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.2/junit-jupiter-engine-5.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-engine/1.8.2/junit-platform-engine-1.8.2.jar:/Users/aljaz.bensa/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/aljaz.bensa/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/aljaz.bensa/.m2/repository/org/mockito/mockito-junit-jupiter/3.6.0/mockito-junit-jupiter-3.6.0.jar:/Users/aljaz.bensa/.m2/repository/org/mockito/mockito-core/3.6.0/mockito-core-3.6.0.jar:/Users/aljaz.bensa/.m2/repository/net/bytebuddy/byte-buddy/1.10.15/byte-buddy-1.10.15.jar:/Users/aljaz.bensa/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.15/byte-buddy-agent-1.10.15.jar:/Users/aljaz.bensa/.m2/repository/org/objenesis/objenesis/3.1/objenesis-3.1.jar:/Users/aljaz.bensa/.m2/repository/org/apache/maven/surefire/surefire-junit-platform/3.0.0-M4/surefire-junit-platform-3.0.0-M4.jar:/Users/aljaz.bensa/.m2/repository/org/apache/maven/surefire/common-java5/3.0.0-M4/common-java5-3.0.0-M4.jar:/Users/aljaz.bensa/.m2/repository/org/junit/platform/junit-platform-launcher/1.8.2/junit-platform-launcher-1.8.2.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.1+0"/>
+    <property name="user.name" value="aljaz.bensa"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="11.6"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/aljaz.bensa/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/rz/5ybxp98d33183bvht2tzn14r0000gp/T/"/>
+    <property name="java.version" value="17.0.1"/>
+    <property name="user.dir" value="/Users/aljaz.bensa/Project/Udacity/FinalJavaProject/cd0384-java-application-deployment-projectstarter/starter/catpoint-parent/security"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/aljaz.bensa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="17.0.1+0"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="changeAlarmState_alarmActiveAndSensorStateChanges_stateNotAffected" classname="com.udacity.security.service.SecurityServiceTest" time="0.155">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1253321264 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$855364911 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.003">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1195378741 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmState_sensorDeactivateWhileInactive_noChangeToAlarmState(AlarmStatus)[3]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$2044793663 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="updateSensors_systemArmed_deactivateAllSensors(ArmingStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$271930000 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="updateSensors_systemArmed_deactivateAllSensors(ArmingStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$588538371 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_alarmAlreadyPendingAndSensorActivated_alarmStatusAlarm" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1800095952 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_alarmArmedAndSensorActivated_alarmStatusPending(ArmingStatus)[1]" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1224709439 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_alarmArmedAndSensorActivated_alarmStatusPending(ArmingStatus)[2]" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$898727860 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmState_systemActivatedWhileAlreadyActiveAndAlarmPending_changeToAlarmState" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1543207178 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_sensorStatusChangeAndSystemIsAlreadyDisarmed_stateNotAffected(Boolean,Boolean)" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$500421393 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_sensorStatusChangeAndSystemIsAlreadyDisarmed_stateNotAffected(Boolean,Boolean)" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$246892299 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_systemArmedHomeAndCatDetected_changeToAlarmStatus" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1989578329 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmState_imageContainingCatDetectedAndSystemArmed_changeToAlarmStatus" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$823960196 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_alarmPendingAndAllSensorsInactive_changeToNoAlarm" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$2116914425 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmStatus_systemDisArmed_changeToAlarmStatus" classname="com.udacity.security.service.SecurityServiceTest" time="0.002">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1239509393 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+  <testcase name="changeAlarmState_noCatImageIdentifiedAndSensorsAreInactive_changeToAlarmStatus" classname="com.udacity.security.service.SecurityServiceTest" time="0.001">
+    <error type="org.mockito.exceptions.base.MockitoException"><![CDATA[org.mockito.exceptions.base.MockitoException: 
+
+Mockito cannot mock this class: interface com.udacity.security.data.SecurityRepository.
+
+Mockito can only mock non-private & non-final classes.
+If you're not sure why you're getting this error, please report to the mailing list.
+
+
+Java               : 17
+JVM vendor name    : Homebrew
+JVM vendor version : 17.0.1+0
+JVM name           : OpenJDK 64-Bit Server VM
+JVM version        : 17.0.1+0
+JVM info           : mixed mode
+OS name            : Mac OS X
+OS version         : 11.6
+
+
+Underlying exception : org.mockito.exceptions.base.MockitoException: 
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: org.mockito.exceptions.base.MockitoException: 
+
+Could not force module adjustment of the module of interface com.udacity.security.data.SecurityRepository
+
+This is required to adjust the module graph to enable mock creation
+Caused by: java.lang.IllegalArgumentException: com.udacity.security.data.SecurityRepository$MockitoModuleProbe$1242400867 must be defined in the same package as org.mockito.codegen.InjectionBase
+]]></error>
+  </testcase>
+</testsuite>
